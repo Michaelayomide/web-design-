@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exoflora Luxury | Avant-Garde Floral Design</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Serif) & Montserrat (Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Luxury Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        luxury: {
+                            gold: '#D4AF37',
+                            goldLight: '#F3E5AB',
+                            dark: '#111111',
+                            charcoal: '#1A1A1A',
+                            clay: '#262626',
+                        }
+                    },
+                    letterSpacing: {
+                        widest: '.25em',
+                        luxury: '.18em'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #111111;
+            color: #E5E5E5;
+        }
+        /* Smooth zoom effect for luxury hero */
+        .hero-zoom {
+            animation: subtleZoom 20s infinite alternate ease-in-out;
+        }
+        @keyframes subtleZoom {
+            from { transform: scale(1); }
+            to { transform: scale(1.08); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- Announcement Bar -->
+    <div class="w-full bg-luxury-dark border-b border-neutral-800 py-2 text-center text-[10px] tracking-widest text-luxury-gold uppercase font-medium">
+        Complimentary white-glove delivery on all bespoke arrangements
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-luxury-dark/80 backdrop-blur-md border-b border-neutral-950 px-6 lg:px-16 py-5 flex justify-between items-center">
+        <!-- Mobile Menu Toggle -->
+        <button class="lg:hidden text-white text-xl focus:outline-none" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+
+        <!-- Navigation Links (Left) -->
+        <nav class="hidden lg:flex space-x-8 text-xs uppercase tracking-widest font-medium text-neutral-400">
+            <a href="#collections" class="hover:text-luxury-gold transition-colors duration-300">Collections</a>
+            <a href="#bespoke" class="hover:text-luxury-gold transition-colors duration-300">Bespoke</a>
+            <a href="#journal" class="hover:text-luxury-gold transition-colors duration-300">The Journal</a>
+        </nav>
+
+        <!-- Brand Identity / Logo -->
+        <div class="text-center absolute left-1/2 transform -translate-x-1/2">
+            <a href="#" class="font-serif text-xl lg:text-2xl tracking-[0.3em] uppercase font-bold text-white block">
+                EXOFLORA
+            </a>
+            <span class="text-[8px] tracking-[0.5em] text-luxury-gold uppercase block -mt-1">Luxury Botanicals</span>
+        </div>
+
+        <!-- Utility Navigation (Right) -->
+        <div class="flex items-center space-x-6 text-neutral-300 text-sm">
+            <a href="#" class="hover:text-luxury-gold transition-colors duration-300 hidden sm:inline-block"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#" class="hover:text-luxury-gold transition-colors duration-300"><i class="fa-regular fa-user"></i></a>
+            <a href="#" class="hover:text-luxury-gold transition-colors duration-300 relative">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="absolute -top-2 -right-2 bg-luxury-gold text-luxury-dark font-sans font-bold text-[9px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Masterpiece Section -->
+        <section class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-neutral-900">
+            <div class="absolute inset-0 z-0">
+                <!-- Using high-concept, dark editorial botanical background -->
+                <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=1920&auto=format&fit=crop" 
+                     alt="Exoflora Luxury Editorial Arrangement" 
+                     class="w-full h-full object-cover opacity-40 hero-zoom">
+                <div class="absolute inset-0 bg-gradient-to-t from-luxury-dark via-transparent to-luxury-dark/50"></div>
+            </div>
+            
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+                <p class="text-luxury-gold text-xs uppercase tracking-[0.4em] font-medium mb-4">Summer Monograph Collection</p>
+                <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl text-white font-medium tracking-wide leading-tight mb-8">
+                    Sculptural Floristry <br><span class="italic font-normal text-neutral-300">for Exceptional Spaces</span>
+                </h1>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#collections" class="w-full sm:w-auto bg-luxury-gold hover:bg-luxury-goldLight text-luxury-dark text-xs uppercase tracking-widest font-semibold px-8 py-4 transition-all duration-300 ease-in-out transform hover:-translate-y-0.5">
+                        Explore Curation
+                    </a>
+                    <a href="#bespoke" class="w-full sm:w-auto border border-white hover:border-luxury-gold text-white hover:text-luxury-gold text-xs uppercase tracking-widest font-semibold px-8 py-4 transition-all duration-300 ease-in-out bg-transparent">
+                        Commission Bespoke
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 text-center animate-bounce">
+                <a href="#manifesto" class="text-neutral-500 hover:text-white transition-colors duration-300">
+                    <span class="text-[9px] uppercase tracking-widest block mb-2">Scroll Down</span>
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- Brand Manifesto / Philosophy -->
+        <section id="manifesto" class="py-24 lg:py-36 px-6 lg:px-16 bg-luxury-dark max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 space-y-6">
+                <span class="text-luxury-gold text-xs uppercase tracking-widest font-medium block">Our Ethos</span>
+                <h2 class="font-serif text-3xl lg:text-4xl text-white font-light tracking-wide leading-snug">
+                    We approach floristry as transient architectural form.
+                </h2>
+                <div class="w-12 h-[1px] bg-luxury-gold"></div>
+            </div>
+            <div class="lg:col-span-7">
+                <p class="text-neutral-400 font-light leading-relaxed text-sm lg:text-base max-w-xl">
+                    Exoflora rejects standard retail floral design in favor of rare, avant-garde botanical specimens and structural mastery. Every installation, arrangement, and single stem is sourced directly from ethical, sustainable global micro-growers who cultivate for architectural rarity, vibrant depth, and structural persistence.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Curated Collections Grid -->
+        <section id="collections" class="py-16 px-6 lg:px-16 bg-luxury-charcoal">
+            <div class="max-w-7xl mx-auto mb-16 flex flex-col sm:flex-row justify-between items-baseline gap-4">
+                <div>
+                    <p class="text-luxury-gold text-xs uppercase tracking-widest font-medium mb-2">The Current Anthology</p>
+                    <h2 class="font-serif text-3xl text-white tracking-wide">Signature Formats</h2>
+                </div>
+                <a href="#" class="text-xs uppercase tracking-widest font-medium text-neutral-400 hover:text-luxury-gold border-b border-neutral-700 hover:border-luxury-gold pb-1 transition-all duration-300">
+                    View Entire Portfolio <i class="fa-solid fa-arrow-right-long ml-2 text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Product/Collection Grid -->
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product 1 -->
+                <div class="group bg-luxury-dark border border-neutral-900 overflow-hidden relative flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[4/5] bg-neutral-800">
+                        <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=800&auto=format&fit=crop" 
+                             alt="The Noir Orchid Arrangement" 
+                             class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                        <!-- Quick View Overlay Button -->
+                        <div class="absolute inset-0 bg-luxury-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button class="bg-white text-luxury-dark text-xs uppercase tracking-widest font-semibold px-6 py-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out">
+                                Quick View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-luxury-dark relative z-10 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-lg text-white group-hover:text-luxury-gold transition-colors duration-300">The Noir Orchid Monolith</h3>
+                            <p class="text-neutral-500 font-light text-xs mt-1 italic">Rare black phalaenopsis, smoke bush, custom obsidian stoneware container.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-neutral-900 flex justify-between items-center">
+                            <span class="font-sans font-medium text-sm text-neutral-300">$340</span>
+                            <button class="text-xs uppercase tracking-widest font-medium text-luxury-gold hover:text-white transition-colors duration-300">
+                                Add to Commission
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group bg-luxury-dark border border-neutral-900 overflow-hidden relative flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[4/5] bg-neutral-800">
+                        <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=800&auto=format&fit=crop" 
+                             alt="The Alabaster Anthurium" 
+                             class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                        <div class="absolute inset-0 bg-luxury-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button class="bg-white text-luxury-dark text-xs uppercase tracking-widest font-semibold px-6 py-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out">
+                                Quick View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-luxury-dark relative z-10 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-lg text-white group-hover:text-luxury-gold transition-colors duration-300">Alabaster Anthurium Architecture</h3>
+                            <p class="text-neutral-500 font-light text-xs mt-1 italic">Bleached structural fan palms, white anthurium, matte alabaster vessel.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-neutral-900 flex justify-between items-center">
+                            <span class="font-sans font-medium text-sm text-neutral-300">$295</span>
+                            <button class="text-xs uppercase tracking-widest font-medium text-luxury-gold hover:text-white transition-colors duration-300">
+                                Add to Commission
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group bg-luxury-dark border border-neutral-900 overflow-hidden relative flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[4/5] bg-neutral-800">
+                        <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?q=80&w=800&auto=format&fit=crop" 
+                             alt="The Crimson Baroque Arrangement" 
+                             class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+                        <div class="absolute inset-0 bg-luxury-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <button class="bg-white text-luxury-dark text-xs uppercase tracking-widest font-semibold px-6 py-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 ease-out">
+                                Quick View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-luxury-dark relative z-10 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-lg text-white group-hover:text-luxury-gold transition-colors duration-300">The Crimson Baroque</h3>
+                            <p class="text-neutral-500 font-light text-xs mt-1 italic">Deep burgundy garden roses, cascading amaranthus, raw bronze vessel.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-neutral-900 flex justify-between items-center">
+                            <span class="font-sans font-medium text-sm text-neutral-300">$420</span>
+                            <button class="text-xs uppercase tracking-widest font-medium text-luxury-gold hover:text-white transition-colors duration-300">
+                                Add to Commission
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Bespoke Consultation Section -->
+        <section id="bespoke" class="relative py-32 lg:py-48 bg-luxury-dark border-t border-neutral-950 overflow-hidden">
+            <div class="absolute right-0 top-0 w-full lg:w-1/2 h-full opacity-20 lg:opacity-40 z-0">
+                <img src="https://images.unsplash.com/photo-1533616688419-b7a585564566?q=80&w=1000&auto=format&fit=crop" 
+                     alt="Bespoke Floristry Consultations" 
+                     class="w-full h-full object-cover grayscale">
+                <div class="absolute inset-0 bg-gradient-to-r from-luxury-dark via-luxury-dark/80 lg:via-transparent to-transparent"></div>
+            </div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2">
+                <div class="space-y-8 max-w-xl">
+                    <span class="text-luxury-gold text-xs uppercase tracking-[0.3em] font-medium block">Private Commissions</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl text-white font-light tracking-wide leading-tight">
+                        Bespoke Botanical Architecture
+                    </h2>
+                    <p class="text-neutral-400 font-light text-sm sm:text-base leading-relaxed">
+                        For private estates, commercial installations, high-concept weddings, or regular corporate subscriptions. Our design house crafts site-specific compositions built entirely to balance your space's specific lighting, architecture, and mood metrics.
+                    </p>
+                    <div class="pt-4">
+                        <a href="#" class="inline-block bg-transparent border border-luxury-gold hover:bg-luxury-gold text-luxury-gold hover:text-luxury-dark text-xs uppercase tracking-widest font-semibold px-8 py-4 transition-all duration-300 ease-in-out">
+                            Book Architecture Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-dark text-neutral-400 border-t border-neutral-900 pt-16 pb-8 px-6 lg:px-16 text-xs font-light tracking-wide">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            
+            <!-- Brand Column -->
+            <div class="space-y-4">
+                <h4 class="font-serif text-white tracking-[0.2em] uppercase font-bold text-base">EXOFLORA</h4>
+                <p class="text-neutral-500 leading-relaxed">
+                    Sculptural botanical curation operating out of selective private design houses. Serving exceptional private clients globally.
+                </p>
+                <div class="flex space-x-4 text-neutral-500 pt-2">
+                    <a href="#" class="hover:text-luxury-gold transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                    <a href="#" class="hover:text-luxury-gold transition-colors"><i class="fa-brands fa-pinterest text-lg"></i></a>
+                    <a href="#" class="hover:text-luxury-gold transition-colors"><i class="fa-brands fa-vimeo-v text-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Practical Links -->
+            <div class="space-y-4">
+                <h5 class="text-white uppercase tracking-widest font-medium text-[11px]">The Collections</h5>
+                <ul class="space-y-2 text-neutral-500">
+                    <li><a href="#" class="hover:text-luxury-gold transition-colors">The Monograph Serie</a></li>
+                    <li><a href="#" class="hover:text-luxury-gold transition-colors">Avant-Garde Ikebana</a></li>
+                    <li><a href="#" class="hover:text-luxury-gold transition-colors">Persistent Preserved Architecture</a></li>
+                    <li><a href="#" class="hover:text-luxury-gold transition-colors">Corporate Subscriptions</a></li>
+                </ul>
+            </div>
+
+            <!-- Client Services -->
+            <div class="space-y-4">
+                <h5 class="text-white uppercase tracking-widest font-medium text-[11px]">Concierge Services</h5>
+                <ul class="space-y-2 text-neutral-500">
+                    <li><a href="#" class="hover:text-luxury-gold transition-colors">White-Glove Delivery Protocol</a></li>
+                    <li><a href="#" class="hover:text-luxury-gold transition-colors">Private Commissions Profile</a></li>
+                    <li><a href="#" class="hover:text-luxury-gold transition-colors">Corporate Spatial Audits</a></li>
+                    <li><a href="#" class="hover:text-luxury-gold transition-colors">Care Monograph Archive</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter / Intel -->
+            <div class="space-y-4">
+                <h5 class="text-white uppercase tracking-widest font-medium text-[11px]">Receive the Intel</h5>
+                <p class="text-neutral-500 leading-relaxed">
+                    Receive notification of rare stem access and private collection capsules before public listing.
+                </p>
+                <form class="flex border-b border-neutral-700 py-1">
+                    <input type="email" placeholder="Email Address" class="bg-transparent border-none text-white focus:outline-none w-full text-xs font-sans placeholder-neutral-600">
+                    <button type="submit" class="text-neutral-400 hover:text-luxury-gold transition-colors uppercase text-[10px] tracking-widest font-medium">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright / Legal -->
+        <div class="max-w-7xl mx-auto pt-8 border-t border-neutral-950 flex flex-col sm:flex-row justify-between items-center text-neutral-600 text-[11px]">
+            <p>&copy; 2026 EXOFLORA Luxury Botanicals. All Rights Reserved.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-neutral-400">Terms of Commission</a>
+                <a href="#" class="hover:text-neutral-400">Privacy Manifesto</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
